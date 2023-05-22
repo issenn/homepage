@@ -1,0 +1,159 @@
+---
+import Project from "./Project.astro";
+const projects = [
+  {
+    repo: "https://github.com/issenn/sdf-ansible",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/codis-ansible",
+    desc: "",
+    icon: "i-twemoji-glowing-star",
+  },
+  {
+    repo: "https://github.com/issenn/JenkinsSharedLibraries",
+    desc: "",
+    icon: "i-twemoji-love-you-gesture-light-skin-tone",
+  },
+  {
+    repo: "https://github.com/issenn/fastlane-android",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/fastlane-ios",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/fastlane-common",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/docker-images-dnscrypt-proxy",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/docker-images-athens",
+    desc: "",
+    icon: "i-twemoji-glowing-star",
+  },
+  {
+    repo: "https://github.com/issenn/docker-images-coredns",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/coredns-config",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/athens-config",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/traefik-config",
+    desc: "",
+    icon: "i-twemoji-glowing-star",
+  },
+  {
+    repo: "https://github.com/issenn/bitwarden-config",
+    desc: "",
+    icon: "i-twemoji-glowing-star",
+  },
+  {
+    repo: "https://github.com/issenn/chezmoi.sh",
+    desc: "",
+    icon: "i-twemoji-glowing-star",
+  },
+  {
+    repo: "https://github.com/issenn/so-vits-svc-4.0-spaces-sample",
+    desc: "",
+    icon: "i-twemoji-hammer-and-wrench",
+  },
+  {
+    repo: "https://github.com/issenn/colab-so-vits-svc",
+    desc: "",
+    icon: "i-twemoji-musical-notes",
+  },
+  {
+    repo: "https://github.com/issenn/falcon-plus",
+    desc: "",
+    icon: "i-twemoji-smiling-face-with-horns",
+  },
+  {
+    repo: "https://github.com/issenn/dotfiles",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/zsh-config",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/git-config",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/win10-secure-baseline-gpo",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/homebrew-config",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/active-forks",
+    desc: "",
+    icon: "i-twemoji-open-file-folder",
+  },
+  {
+    repo: "https://github.com/issenn/netboot.lan",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/clash-config",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/iterm2-config",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+  {
+    repo: "https://github.com/issenn/gnupg-config",
+    desc: "",
+    icon: "i-twemoji-framed-picture",
+  },
+];
+---
+
+<h3 class="flex items-center mt-8 mb-4 font-semibold text-2xl">
+  <span flex-1 class="outfit">💻Projects</span>
+  <a
+    href="https://github.com/issenn"
+    target="_blank"
+    color-white
+    class="op-50 ml-2 hover:op-100 transition-opacity cursor-pointer"
+  >
+    <div class="m-2 i-ri-arrow-right-up-line"></div>
+  </a>
+</h3>
+<div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+  {
+    projects.map((project) => {
+      return <Project {...project} />;
+    })
+  }
+</div>

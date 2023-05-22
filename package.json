@@ -10,6 +10,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.4.1"
+    "astro": "^2.5.3"
+  },
+  "devDependencies": {
+    "@iconify-json/eos-icons": "^1.1.6",
+    "@iconify-json/fluent-emoji-high-contrast": "^1.1.9",
+    "@iconify-json/icon-park-outline": "^1.1.11",
+    "@iconify-json/jam": "^1.1.4",
+    "@iconify-json/line-md": "^1.1.24",
+    "@iconify-json/ri": "^1.1.9",
+    "@iconify-json/simple-icons": "^1.1.54",
+    "@iconify-json/twemoji": "^1.1.11",
+    "@unocss/preset-attributify": "^0.52.1",
+    "unocss": "^0.52.1"
   }
 }

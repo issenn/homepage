@@ -1,0 +1,107 @@
+---
+import Social from "./Social.astro";
+const socials = [
+  {
+    text: "Github",
+    link: "https://github.com/issenn",
+    icon: "i-ri-github-fill",
+    classes: "hover:bg-gray-700 dark:hover:bg-white dark:hover:text-gray-900",
+  },
+  {
+    text: "Blog",
+    link: "https://www.issenn.ml",
+    icon: "i-ri-book-2-line",
+    classes: "hover:bg-gradient-to-r from-[#fd5949] to-[#d6249f]",
+  },
+  {
+    text: "Drive",
+    link: "https://drive.issenn.ml",
+    icon: "i-icon-park-outline:network-drive",
+    classes: "hover:bg-gradient-to-r from-[#fd5949] to-[#d6249f]",
+  },
+  {
+    text: "ChatGPT",
+    link: "https://chatgpt.issenn.ml",
+    icon: "i-ri:openai-fill",
+    classes: "hover:bg-gradient-to-r from-[#fd5949] to-[#d6249f]",
+  },
+  {
+    text: "ChatGPT2",
+    link: "https://chatbot.issenn.ml",
+    icon: "i-ri:openai-fill",
+    classes: "hover:bg-gradient-to-r from-[#fd5949] to-[#d6249f]",
+  },
+  {
+    text: "AI Voice",
+    link: "https://huggingface.co/spaces/issenn/so-vits-svc-4.0-spaces-sample",
+    icon: "i-eos-icons:ai",
+    classes: "hover:bg-gradient-to-r from-[#fd5949] to-[#d6249f]",
+  },
+  {
+    text: "",
+    link: "https://stackoverflow.com/users/19273896/issenn",
+    icon: "i-jam-stackoverflow",
+    classes: "hover:bg-#ff8200",
+  },
+  {
+    text: "",
+    link: "https://hub.docker.com/u/issenn",
+    icon: "i-simple-icons:docker",
+    classes: "hover:bg-#ff8200",
+  },
+  {
+    text: "",
+    link: "https://huggingface.co/issenn",
+    icon: "i-fluent-emoji-high-contrast:hugging-face",
+    classes: "hover:bg-#ff8200",
+  },
+  {
+    text: "",
+    link: "https://greasyfork.org/users/974285-issenn",
+    icon: "i-simple-icons:tampermonkey",
+    classes: "hover:bg-#ff8200",
+  },
+  {
+    text: "",
+    link: "https://twitter.com/issennknight",
+    icon: "i-ri-twitter-fill",
+    classes: "hover:bg-[#00ACEE]",
+  },
+  {
+    text: "",
+    link: "https://space.bilibili.com/1327327",
+    icon: "i-ri-bilibili-fill",
+    classes: "hover:bg-[#fb7299]",
+  },
+  {
+    text: "",
+    link: "https://keybase.io/issenn",
+    icon: "i-simple-icons:keybase",
+    classes: "hover:bg-[#00b0ff]",
+  },
+  {
+    text: "",
+    link: "mailto:issennknight@gmail.com",
+    icon: "i-ri-mail-fill",
+    classes: "hover:bg-[#00b0ff]",
+  },
+  {
+    text: "",
+    link: "https://afdian.net/@issenn",
+    icon: "i-line-md:buy-me-a-coffee-twotone",
+    classes: "hover:bg-red-4",
+  },
+  // {
+  //   text: "",
+  //   link: "https://sp.issenn.ml",
+  //   icon: "i-twemoji:money-bag",
+  //   classes: "hover:bg-red-4",
+  // },
+];
+---
+
+{
+  socials.map((social) => {
+    return <Social {...social} />;
+  })
+}

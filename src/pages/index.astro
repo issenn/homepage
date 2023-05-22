@@ -1,15 +1,70 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import Socials from "../components/Socials.astro";
+import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Hi, I'm Issenn">
+  <main>
+    <div display="flex" flex="row">
+      <div m="r-4">
+        <img src="https://www.issenn.ml/issenn/avatar/avatar.jpg" alt="avatar" h="20" class="rounded-40%" />
+      </div>
+      <h1>Hello, I'm <span class="text-gradient">Issenn</span></h1>
+    </div>
+    <p class="instructions">
+      👦<strong>Full Stack</strong> DevOps<br />
+      If you want to go <strong>fast</strong>, go <strong>alone</strong>. If you want to go <strong>far</strong>, go <strong>together</strong>.
+    </p>
+    <Socials />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake.svg">
+      <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." w-full src="https://cdn.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake.svg">
+    </picture>
+    <Projects />
+    <Skills />
+    <footer mt-12>
+      <p text-sm op-40>Issenn © 2023</p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 94ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    /* border: 1px solid rgba(var(--accent), 50%); */
+    /* padding: 1rem; */
+    border-radius: 0.6rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 22%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+</style>
