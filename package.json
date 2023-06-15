@@ -23,6 +23,7 @@
     "@iconify-json/tabler": "^1.1.77",
     "@iconify-json/twemoji": "^1.1.11",
     "@unocss/preset-attributify": "^0.52.1",
+    "axios": "^1.4.0",
     "unocss": "^0.53.1",
     "vercel": "^30.2.2",
     "vite": "^4.3.9"
