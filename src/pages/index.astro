@@ -3,13 +3,15 @@ import Layout from "../layouts/Layout.astro";
 import Socials from "../components/Socials.astro";
 import Projects from "../components/Projects.astro";
 import Skills from "../components/Skills.astro";
+
+import avatar from "../assets/avatar.jpg";
 ---
 
 <Layout title="Hi, I'm Issenn">
   <main>
     <div display="flex" flex="row">
       <div m="r-4">
-        <img src="https://www.issenn.ml/issenn/avatar/avatar.jpg" alt="avatar" h="20" class="rounded-40%" />
+        <img src={`${avatar}`} alt="avatar" h="20" class="rounded-40%" />
       </div>
       <h1>Hello, I'm <span class="text-gradient">Issenn</span></h1>
     </div>
@@ -20,9 +22,9 @@ import Skills from "../components/Skills.astro";
     </p>
     <Socials />
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake.svg">
-      <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." w-full src="https://cdn.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://fastly.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://fastly.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake.svg">
+      <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." w-full src="https://fastly.jsdelivr.net/gh/issenn/issenn@output/github-contribution-grid-snake.svg">
     </picture>
     <Projects />
     <Skills />
